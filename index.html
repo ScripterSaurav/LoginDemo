@@ -24,3 +24,24 @@
   <div id="message"></div>
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Close Button Example</title>
+</head>
+<body>
+  <button id="closeButton">Close</button>
+
+  <script>
+    // Add an event listener to the button
+    document.getElementById("closeButton").addEventListener("click", function() {
+      if (confirm("Do you want to close this page?")) {
+        window.close();
+      }
+    });
+  </script>
+</body>
+</html>
+
